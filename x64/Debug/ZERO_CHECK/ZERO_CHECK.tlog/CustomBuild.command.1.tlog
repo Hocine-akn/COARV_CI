@@ -1,0 +1,10 @@
+^C:\USERS\ELEVE\SOURCE\REPOS\MODERNOPENGLTUTORIAL\BUILD\CMAKEFILES\48AD6DFE0D0D038A2292E5236369C8C2\GENERATE.STAMP.RULE
+setlocal
+C:\Appli\CMake\bin\cmake.exe -SC:/Users/Eleve/source/repos/ModernOpenGLtutorial/ogl-master -BC:/Users/Eleve/source/repos/ModernOpenGLtutorial/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Eleve/source/repos/ModernOpenGLtutorial/build/Tutorials.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
